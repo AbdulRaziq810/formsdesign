@@ -1,0 +1,102 @@
+* {
+  font-family: cursive;
+  color: brown;
+}
+body {
+  background: #b6b6d6;
+  background: linear-gradient(
+    90deg,
+    rgba(182, 182, 214, 1) 0%,
+    rgba(118, 118, 176, 1) 31%,
+    rgba(115, 182, 199, 1) 50%
+  );
+}
+form {
+  width: 500px;
+}
+fieldset {
+  border: 3px solid purple;
+  border-radius: 10px;
+}
+legend {
+  color: black;
+}
+input:required {
+  border: 2px solid coral;
+}
+input:optional {
+  border: 2px solid greenyellow;
+}
+input[type="radio"]:checked {
+  height: 20px;
+  width: 20px;
+}
+input[type="radio"]:hover {
+  cursor: pointer;
+}
+input[type="radio"]:checked + label {
+  color: blue;
+}
+input[type="submit"] {
+  border: 5px solid yellowgreen;
+  border-radius: 10px;
+}
+select {
+  background-color: bisque;
+  border: 5px solid yellow;
+  border-radius: 10px;
+  cursor: pointer;
+}
+option {
+  color: blue;
+}
+input:focus {
+  background-color: cornflowerblue;
+}
+input[type="text"] + span {
+  display: none;
+  color: black;
+}
+input[type="text"]:hover + span {
+  display: inline;
+}
+input[type="email"] + span {
+  display: none;
+}
+input[type="email"]:hover + span {
+  display: inline;
+  color: black;
+}
+input[type="tel"] + span {
+  display: none;
+}
+input[type="tel"]:hover + span {
+  display: inline;
+  color: black;
+}
+
+img {
+  display: none;
+}
+input[type="email"]:focus:valid ~ img#valid {
+  display: inline;
+  height: 25px;
+  width: 25px;
+}
+input[type="email"]:focus:invalid ~ img#invalid {
+  display: inline;
+  height: 25px;
+  width: 25px;
+}
+#firsthead:hover {
+  background: #833ab4;
+  background: #020024;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
