@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+
+    <style></style>
+  </head>
+  <body>
+    <h1 id="firsthead">Course Registration Form</h1>
+    <form action="">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <table>
+          <tr>
+            <td><label for="name">First NAME</label></td>
+            <td>
+              <input type="text" required placeholder="Ex-Raziq" />
+              <span>Enter your Name</span>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="name">Last Name</label></td>
+            <td><input type="text" optional /></td>
+          </tr>
+
+          <tr>
+            <td><label for="dob">Date of Birth</label></td>
+            <td><input type="date" required /></td>
+          </tr>
+          <tr>
+            <td><label for="g">Gender</label></td>
+            <td>
+              <input type="radio" name="Gender" /><label for="">Male</label>
+              <input type="radio" name="Gender" /><label for="">Female</label>
+              <input type="radio" name="Gender" id="" /><label for=""
+                >Other</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Profile Picture</label></td>
+            <td><input type="file" /></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact Information</legend>
+        <table>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td>
+              <input
+                type="email"
+                maxlength="15"
+                placeholder="Ex-Raziq@gmail.com"
+              />
+
+              <span>Enter the Email</span>
+              <img id="valid" src="check-mark.jpg" alt="image not found" />
+              <img
+                id="invalid"
+                src="red-wrong-check-mark-icon-symbol-vector-31096094.jpg"
+                alt="image not found"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="mobile">Phone Number</label></td>
+            <td>
+              <input
+                type="tel"
+                name="mobile number"
+                required
+                pattern="10-digit number"
+              />
+              <span>Enter the Mobile number</span>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="">Address</label></td>
+            <td><textarea name="" id="" rows="5" cols="25"></textarea></td>
+          </tr>
+
+          <tr>
+            <td><label for="country">Country</label></td>
+            <td>
+              <select name="country" id="">
+                <option value="type">India</option>
+                <option value="type">USA</option>
+                <option value="type">China</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Education Background</legend>
+        <table>
+          <tr>
+            <td><label for="qualification">Highest qualification</label></td>
+            <td>
+              <select name="" id="">
+                <option value="graduate">Graduate</option>
+                <option value="under graduate">Under Graduate</option>
+                <option value="post graduate">Post Graduate</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="special">Specialization</label></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><label for="yoG">Year of Grauation</label></td>
+            <td><input type="text" /></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Job Preferences</legend>
+        <table>
+          <tr>
+            <td><label for=" prefferd role">Preferred Role</label></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><label for="salary">Expected Salary</label></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Preferred Location</label></td>
+            <td>
+              <input type="checkbox" />Bangalore <input type="checkbox" />Delhi
+              <input type="checkbox" />Remote <input type="checkbox" />Pune
+            </td>
+          </tr>
+          <tr>
+            <td>Willing to Relocate?</td>
+            <td><input type="checkbox" /></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Create Account</legend>
+        <table>
+          <tr>
+            <td><label for="passwaord">Password</label></td>
+            <td>
+              <input
+                type="text"
+                required
+                placeholder="Min 6 Characters"
+                minlength="6"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="confirm passwaord">Confirm Password</label></td>
+            <td><input type="text" required /></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Resume</legend>
+        <table>
+          <tr>
+            <td>
+              <label for="upload resume"> Upload Resume (PDF only)</label>
+            </td>
+            <td><input type="file" required /></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Agreement</legend>
+        <table>
+          <tr>
+            <td><input type="checkbox" required /></td>
+            <td>
+              <label for="agree">I agree to the terms and Conditions</label>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+
+      <input type="submit" />
+      <button>Reset Form</button>
+    </form>
+  </body>
+</html>
